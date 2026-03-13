@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интерьер. — Магазин мебели</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="hero-page">
-        <header class="header center"> <!-- Добавлен класс center -->
+        <header class="header center"> 
             <div class="logo">Интерьер.</div>
             <nav class="header-menu">
                 <a href="#catalog">Каталог</a>
@@ -19,19 +19,19 @@
             </nav>
         </header>
 
-        <div class="hero-content">
+        <!-- Добавил center сюда, чтобы текст не прижимался к краям экрана -->
+        <div class="hero-content center">
             <h1 class="hero-title">Всё, чего<br>заслуживает ваш дом</h1>
             <p class="hero-text">Наша мебель — ваше отражение</p>
             <a href="#catalog" class="hero-link">Смотреть каталог</a>
         </div>
     </section>
 
-    <main class="container">
+    <main>
         <section id="catalog" class="products center">
-        <h2 class="section-title">Каталог товаров</h2>
-        <div class="products-flex">
+            <h2 class="section-title">Каталог товаров</h2>
             
-            <div class="products-grid">
+            <div class="products-grid"> <!-- Убрал лишний пустой div products-flex -->
                 <article class="product-card">
                     <div class="product-thumb">
                         <img src="images/Rectangle 22.jpg" alt="Кровать TATRAN">
@@ -90,10 +90,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p class="footer-copy">Сайт был сверстан <span class="red-footer">by @fee1myp31n</span></p>
-        </div>
+        <p class="footer-copy">Сайт был сверстан <span class="red-footer">by @fee1myp31n</span></p>
     </footer>
 </body>
 </html>
-
