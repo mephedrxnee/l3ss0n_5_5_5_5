@@ -1,3 +1,4 @@
+/* Базовые сбросы */
 * {
     margin: 0;
     padding: 0;
@@ -7,42 +8,43 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #000;
-    line-height: 1.4;
 }
 
+/* Логика центрирования контента */
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
 
+/* Шапка */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); 
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); /* Линия внутри .center */
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 600;
-    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600; /* Semi-bold */
+    color: #fff;
 }
 
 .header-menu a {
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
-    margin-left: 30px;
-    font-size: 14px;
+    margin-left: 32px;
+    font-size: 16px;
 }
 
+/* Герой-секция */
 .hero-page {
     height: 100vh;
-
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('images/Rectangle 15.jpg') no-repeat center/cover;
-    color: #FFFFFF;
+    color: #fff;
     display: flex;
     flex-direction: column;
 }
@@ -63,75 +65,73 @@ body {
 
 .hero-text {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hero-link {
-    color: #FFFFFF;
+    color: #fff;
     font-size: 16px;
     text-decoration: underline;
 }
 
+/* Каталог на FLEXBOX */
 .products {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .products-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px 0;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься */
+    justify-content: space-between; /* Распределяет 3 в ряд по краям контента */
+    gap: 48px 0;
 }
 
 .product-card {
-    width: calc(33.333% - 20px);
+    width: 31%; /* Чтобы влезло 3 штуки в ряд */
     display: flex;
     flex-direction: column;
 }
 
 .product-thumb img {
     width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .product-title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
 .product-desc {
-    font-size: 12px;
+    font-size: 14px;
     color: #888;
     margin-bottom: 12px;
     flex-grow: 1;
 }
 
 .product-price {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
 }
 
+/* Футер */
 .footer {
-    height: 150px;
-    background-color: #f7f7f7;
+    height: 150px; /* Фиксированная высота */
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.footer-copy {
-    font-size: 14px;
-    color: #444;
+    background-color: #f7f7f7;
 }
 
 .red-footer {
     color: #FF0000;
+    font-weight: 600;
 }
