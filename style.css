@@ -6,62 +6,70 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden; 
+    color: #000;
     line-height: 1.4;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-
-.hero-page {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgb(0, 0, 0)), url('images/b2f132d229aeb36df1219bedc89db2ff.jpg');
-    background-size: cover;
-    background-position: center;
-    color: rgba(255, 255, 255, 0.836);
-    display: flex;
-    flex-direction: column;
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .header {
-    display: flex;                
-    justify-content: space-between; 
-    align-items: center;           
-    padding: 30px 80px;            
-    border-bottom: 0.5px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
 }
 
 .header-menu a {
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
     text-decoration: none;
     margin-left: 30px;
     font-size: 14px;
 }
 
+.hero-page {
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/Rectangle 15.jpg') no-repeat center/cover;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
 .hero-content {
-    padding: 100px 80px;
-    flex-grow: 1; 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-title {
     font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 16px;
 }
 
 .hero-text {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .hero-link {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
+    color: #FFFFFF;
     font-size: 16px;
+    text-decoration: underline;
 }
 
 .products {
@@ -70,23 +78,19 @@ body {
 
 .section-title {
     font-size: 32px;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
 .products-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 40px 30px; 
-}
-
-.products-grid {
-    display: grid;
-    /* Вместо repeat(3, 1fr) пишем это: */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 0;
 }
 
 .product-card {
+    width: calc(33.333% - 20px);
     display: flex;
     flex-direction: column;
 }
@@ -116,13 +120,18 @@ body {
 }
 
 .footer {
+    height: 150px;
     background-color: #f7f7f7;
-    padding: 40px 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-copy {
     font-size: 14px;
     color: #444;
 }
 
 .red-footer {
-    color: red;
+    color: #FF0000;
 }
