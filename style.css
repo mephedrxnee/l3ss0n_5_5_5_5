@@ -82,7 +82,7 @@ body {
 
 .section-title {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 50px;
 }
 
@@ -106,7 +106,7 @@ body {
 
 .product-title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
@@ -119,7 +119,7 @@ body {
 
 .product-price {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Футер */
