@@ -1,137 +1,104 @@
-/* Базовые сбросы */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Montserrat', sans-serif; color: #000; }
+
+
+.center-header {
+    max-width: 1440px; 
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
+.center-content {
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Логика центрирования контента */
-.center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-}
 
-/* Шапка */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); /* Линия внутри .center */
-}
-
-.logo {
-    font-size: 32px;
-    font-weight: 600; /* Semi-bold */
-    color: #fff;
-}
-
-.header-menu a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 32px;
-    font-size: 16px;
-}
-
-/* Герой-секция */
 .hero-page {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    min-height: 750px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('images/Rectangle 15.jpg') no-repeat center/cover;
     color: #fff;
     display: flex;
     flex-direction: column;
 }
 
-.hero-content {
-    flex-grow: 1;
+.header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo { font-size: 32px; font-weight: 600; }
+
+.header-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 16px;
+}
+
+.hero-content {
+    margin-top: 140px;
 }
 
 .hero-title {
     font-size: 64px;
     font-weight: 600;
-    line-height: 70px;
-    margin-bottom: 16px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    margin-left: 117px;
 }
 
 .hero-text {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 24px; 
+    margin-bottom: 30px; 
+    margin-left: 117px;
 }
 
 .hero-link {
     color: #fff;
-    font-size: 16px;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-left: 117px;
 }
 
-/* Каталог на FLEXBOX */
-.products {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
+/* --- КАТАЛОГ --- */
 
-.section-title {
-    font-size: 48px;
-    font-weight: 500;
-    margin-bottom: 50px;
-}
+.products { padding: 50px 0; margin-left: 120px; margin-right: 120px;}
+
+.section-title { font-size: 48px; margin-bottom: 50px; }
 
 .products-grid {
     display: flex;
-    flex-wrap: wrap; /* Позволяет карточкам переноситься */
-    justify-content: space-between; /* Распределяет 3 в ряд по краям контента */
-    gap: 48px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 0;
 }
 
-.product-card {
-    width: 31%; /* Чтобы влезло 3 штуки в ряд */
-    display: flex;
-    flex-direction: column;
-}
+.product-card { width: 31%; }
 
-.product-thumb img {
-    width: 100%;
-    margin-bottom: 16px;
-}
+.product-img { width: 100%; margin-bottom: 15px; }
 
-.product-title {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
+.product-title { font-size: 24px; margin-bottom: 10px; }
 
-.product-desc {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 12px;
-    flex-grow: 1;
-}
+.product-desc { font-size: 14px; color: #888; margin-bottom: 15px; }
 
-.product-price {
-    font-size: 24px;
-    font-weight: 500;
-}
+.product-price { font-size: 20px; font-weight: 600; }
 
-/* Футер */
 .footer {
-    height: 150px; /* Фиксированная высота */
+    height: 120px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #f7f7f7;
+    align-items: center;
+    background: #f7f7f7;
 }
 
-.red-footer {
-    color: #FF0000;
-    font-weight: 600;
-}
+.red-footer { color: red; font-weight: 600; }
